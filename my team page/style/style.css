@@ -1,0 +1,157 @@
+/*Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto+Mono:wght@300&display=swap");
+/*Global styles*/
+* ::after,
+::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f0f0;
+}
+
+/*Variables*/
+/*Global classes*/
+header {
+  padding: 2.5rem 0;
+}
+
+header .head {
+  margin: 0.5rem;
+}
+
+header .head .title {
+  padding-bottom: 1.75rem;
+  font-size: 3rem;
+}
+
+header .head .title::first-letter {
+  text-transform: capitalize;
+}
+
+header .head .p-title {
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+header .head p {
+  color: #464646;
+}
+
+header .head p::first-letter {
+  text-transform: capitalize;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  grid-gap: 0.5em 1em;
+}
+
+main img {
+  height: 270px;
+  width: 180px;
+}
+
+main .sec-col-img {
+  margin-top: 3em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+.position {
+  position: relative;
+  left: 6em;
+  top: 7.7em;
+  text-transform: uppercase;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.position2 {
+  position: relative;
+  left: 6em;
+  top: 10.7em;
+  text-transform: uppercase;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.name {
+  text-transform: capitalize;
+  font-size: 1.3em;
+  margin-top: -.3em;
+}
+
+@media only screen and (min-width: 768px) {
+  header .head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 4em;
+  }
+  header .head .paragraph {
+    margin-left: 5em;
+  }
+  header .head p {
+    display: block;
+    width: 20em;
+    background-color: green;
+  }
+  main {
+    margin-top: -7em;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    grid-gap: 1.5em 1em;
+  }
+  .position {
+    top: 8m;
+  }
+  .position2 {
+    top: 10.7em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  main {
+    margin: 10em;
+    grid-gap: 1.5em 0em;
+  }
+  main img {
+    height: 340px;
+    width: 230px;
+  }
+  main .position {
+    top: 9.5em;
+    left: 7.7em;
+  }
+  main .position2 {
+    top: 12.5em;
+    left: 7.7em;
+  }
+}
+
+footer {
+  text-align: center;
+  margin-top: 5em;
+}
+
+footer::first-letter {
+  text-transform: capitalize;
+  color: #4d4d4d;
+}
+/*# sourceMappingURL=style.css.map */
